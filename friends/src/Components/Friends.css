@@ -1,0 +1,43 @@
+.NavBar {
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 20px;
+    text-align: end;
+    background: white;
+}
+
+.NavBar a {
+    text-decoration: none;
+    color: black;
+    margin-right: 80px;
+}
+
+/**//**//**//**//**//**//**//**//**//**//**/
+
+.Login {
+    border: 1px solid black;
+    width: 455px;
+    height: 200px;
+    margin: auto;
+    margin-top: 100px;
+    padding-top: 50px;
+    margin-bottom: 100px;
+    background: white;
+}
+
+.login-Form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 230px;
+}
+
+.login-Form input {
+    height: 38px;
+    margin-bottom: 10px;
+}
+
+.login-Form button {
+    height: 42px;
+    background-color: #EB4F22;
+}
