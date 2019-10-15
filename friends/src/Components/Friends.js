@@ -4,7 +4,7 @@ const Friend = ( newFriend ) => {
   return (
     <div>
       <h2>{newFriend.name}</h2>
-      <p>email: {newFriend.email}</p>
+      <p>Email: {newFriend.email}</p>
     </div>
   )
 }

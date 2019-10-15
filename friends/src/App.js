@@ -1,9 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import NavBar from './Components/NavBar';
 import Login from '../src/Components/Login';
 import MyFriends from './Components/MyFriends';
+import PrivateRoute from './Components/PrivateRoute'
 
 
 function App() {
@@ -12,7 +13,10 @@ function App() {
     <Router>
         <NavBar />
         <Route exact path='/login' component={Login} />
-        <Route exact path='/myfriends' component={MyFriends} />
+        {/* <Route exact path='/myfriends' component={MyFriends} /> */}
+        <Switch>
+          <PrivateRoute exact path="/myfriends" component={MyFriends} />
+        </Switch>
     </Router>
     </div>
   );

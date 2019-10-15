@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+import axiosWithAuth from "../utils/axiosWithAuth.js";
 
 const AddFriend = () => {
     const [friend, setFriend] = useState({name:'', email:''})
@@ -12,7 +12,7 @@ const AddFriend = () => {
 
     const onSumbit = e => {
         e.preventDefault();
-        axios 
+        axiosWithAuth()
         .post('/friends', friend)
         .then(res => {
             setFriend({
