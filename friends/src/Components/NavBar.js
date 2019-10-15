@@ -8,6 +8,7 @@ function NavBar() {
     return (
         <div className='NavBar'>
             <Link to='/login'>Log In</Link>
+            <Link to='/myfriends'>Friends List</Link>
         </div> /* NavBar end */
     )
 }
